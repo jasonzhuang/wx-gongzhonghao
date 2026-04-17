@@ -1,0 +1,27 @@
+{
+  "name": "wx-article-scraper",
+  "version": "1.0.0",
+  "description": "使用 Playwright 抓取微信公众号文章内容",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "wx-scraper": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "@types/node": "^25.6.0",
+    "@types/turndown": "^5.0.6",
+    "linkedom": "^0.18.12",
+    "playwright": "^1.59.1",
+    "turndown": "^7.2.4",
+    "typescript": "^6.0.2"
+  }
+}
